@@ -9,9 +9,18 @@ def get_client_ip(req):
     
     if x_forwarded_for:
         # I will print variable  "x_forwarded_for"temporary for curiosity
+        print("********************************************************************************************************************")
+        print("   ")
         print(f"x_forwarded_for: {x_forwarded_for}")
+        print("********************************************************************************************************************")
+        print("   ")
         # La primera IP es la del cliente original
+        print("********************************************************************************************************************")
+        print("   ")
         client_ip = x_forwarded_for.split(',')[0].strip()
+        print("********************************************************************************************************************")
+        print("   ")
+
     else:
         # Respaldo para peticiones locales directas
         client_ip = req.remote_addr
