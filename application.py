@@ -44,7 +44,7 @@ def index():
     }
 
     # (Opcional) Imprimir en consola de App Service (Application Logs)
-    print(f"VISITA REGISTRADA: {event_data}")
+    print(f"******************* VISITA REGISTRADA: {event_data} **************************************")
 
     # 3. Retornar la página HTML con el mensaje y la redirección
     return f"""
