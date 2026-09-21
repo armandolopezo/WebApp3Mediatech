@@ -1,0 +1,377 @@
+2026-09-21T13:23:37.3752768Z    _____
+2026-09-21T13:23:37.3753144Z   /  _  \ __________ _________   ____
+2026-09-21T13:23:37.3753159Z  /  /_\  \\___   /  |  \_  __ \_/ __ \
+2026-09-21T13:23:37.3753171Z /    |    \/    /|  |  /|  | \/\  ___/
+2026-09-21T13:23:37.3753183Z \____|__  /_____ \____/ |__|    \___  >
+2026-09-21T13:23:37.3753195Z         \/      \/                  \/
+2026-09-21T13:23:37.3753208Z A P P   S E R V I C E   O N   L I N U X
+2026-09-21T13:23:37.3753218Z
+2026-09-21T13:23:37.3753231Z Documentation     : https://aka.ms/webapp-linux
+2026-09-21T13:23:37.3753245Z Python quickstart : https://aka.ms/python-qs
+2026-09-21T13:23:37.3753256Z Python version    : 3.14.6
+2026-09-21T13:23:37.3753269Z Instance name     : lw0sdlwk0007QK
+2026-09-21T13:23:37.3753294Z Instance id       : f673f0d9d834b9e1b1a9af3085303f4dbdaafec9f8bbea963b41349b795a6ee6
+2026-09-21T13:23:37.3753304Z
+2026-09-21T13:23:37.3753408Z App port          : 8000
+2026-09-21T13:23:37.3753421Z Port selected by  : Default for this image
+2026-09-21T13:23:37.3753436Z (Learn more about the PORT appsetting https://aka.ms/webapp-python-settings)
+2026-09-21T13:23:37.3753446Z
+2026-09-21T13:23:37.3753458Z Note: Any data outside '/home' is not persisted
+2026-09-21T13:23:37.3753468Z
+2026-09-21T13:23:37.3753499Z ────────────────────────────────────────────────────────────────
+2026-09-21T13:23:37.3753511Z  Run 'apphelp' for available commands and aliases.
+2026-09-21T13:23:37.3753523Z  Run 'install-nettools' to install networking utilities.
+2026-09-21T13:23:37.3753543Z ────────────────────────────────────────────────────────────────
+2026-09-21T13:23:40.6455198Z  * Starting OpenBSD Secure Shell server sshd
+2026-09-21T13:23:40.6759757Z    ...done.
+2026-09-21T13:23:40.6948918Z WEBSITES_INCLUDE_CLOUD_CERTS is not set to true.
+2026-09-21T13:23:40.744845Z Updating certificates in /etc/ssl/certs...
+2026-09-21T13:23:52.36398Z rehash: warning: skipping duplicate certificate in SSLcom-TLS-Root-2022-ECC.pem
+2026-09-21T13:23:52.3647881Z rehash: warning: skipping duplicate certificate in SSLcom-TLS-Root-2022-RSA.pem
+2026-09-21T13:23:52.9643041Z rehash: warning: skipping ca-certificates.crt,it does not contain exactly one certificate or CRL
+2026-09-21T13:23:53.0327158Z 4 added, 0 removed; done.
+2026-09-21T13:23:53.0334216Z Running hooks in /etc/ca-certificates/update.d...
+2026-09-21T13:23:53.0430544Z done.
+2026-09-21T13:23:53.0556765Z CA certificates copied and updated successfully.
+2026-09-21T13:23:53.1536889Z App Command Line not configured, will attempt auto-detect
+2026-09-21T13:23:53.4345848Z  * Starting periodic command scheduler cron
+2026-09-21T13:23:53.4467435Z    ...done.
+2026-09-21T13:23:53.4563366Z Launching oryx with: create-script -appPath /home/site/wwwroot -output /opt/startup/startup.sh -virtualEnvName antenv -defaultApp /opt/defaultsite
+2026-09-21T13:23:53.5559459Z Found build manifest file at '/home/site/wwwroot/oryx-manifest.toml'. Deserializing it...
+2026-09-21T13:23:53.5659241Z Build Operation ID: 368585ea92583c13
+2026-09-21T13:23:53.5748913Z Oryx Version: 0.2.20260710.1, Commit: 079b5b6294eb97d462d8f96bfa3243e9b85251da, ReleaseTagName: 20260710.1
+2026-09-21T13:23:53.5753961Z Output is compressed. Extracting it...
+2026-09-21T13:23:53.5858096Z Found zstd-compressed tarball.
+2026-09-21T13:23:53.5864306Z Extracting '/home/site/wwwroot/output.tar.zst' to directory '/tmp/8df17dca7d8aa34'...
+2026-09-21T13:23:53.587094Z Using zstd for decompression of file: /home/site/wwwroot/output.tar.zst
+2026-09-21T13:23:55.376691Z zstd tar Successfully extracted '/home/site/wwwroot/output.tar.zst' to '/tmp/8df17dca7d8aa34'
+2026-09-21T13:23:55.3842717Z App path is set to '/tmp/8df17dca7d8aa34'
+2026-09-21T13:23:55.7447854Z Detected an app based on Flask
+2026-09-21T13:23:55.7939855Z Generating `gunicorn` command for 'application:app'
+2026-09-21T13:23:55.8343728Z Writing output script to '/opt/startup/startup.sh'
+2026-09-21T13:23:56.1165371Z Using packages from virtual environment antenv located at /tmp/8df17dca7d8aa34/antenv.
+2026-09-21T13:23:56.1245555Z Updated PYTHONPATH to '/opt/startup/app_logs:/tmp/8df17dca7d8aa34/antenv/lib/python3.14/site-packages'
+2026-09-21T13:23:57.6366936Z [2026-09-21 13:23:57 +0000] [1855] [INFO] Starting gunicorn 24.1.1
+2026-09-21T13:23:57.9843957Z [2026-09-21 13:23:57 +0000] [1855] [INFO] Listening at: http://0.0.0.0:8000 (1855)
+2026-09-21T13:23:57.9943463Z [2026-09-21 13:23:57 +0000] [1855] [INFO] Using worker: sync
+2026-09-21T13:23:58.095685Z [2026-09-21 13:23:58 +0000] [1865] [INFO] Booting worker with pid: 1865
+2026-09-21T13:23:58.3045531Z [2026-09-21 13:23:58 +0000] [1865] [ERROR] Exception in worker process
+2026-09-21T13:23:58.3045795Z Traceback (most recent call last):
+2026-09-21T13:23:58.304582Z   File "/opt/python/3.14.6/lib/python3.14/site-packages/gunicorn/arbiter.py", line 641, in spawn_worker
+2026-09-21T13:23:58.3045832Z     worker.init_process()
+2026-09-21T13:23:58.3045843Z     ~~~~~~~~~~~~~~~~~~~^^
+2026-09-21T13:23:58.3045859Z   File "/opt/python/3.14.6/lib/python3.14/site-packages/gunicorn/workers/base.py", line 135, in init_process
+2026-09-21T13:23:58.304587Z     self.load_wsgi()
+2026-09-21T13:23:58.3046137Z     ~~~~~~~~~~~~~~^^
+2026-09-21T13:23:58.3046208Z   File "/opt/python/3.14.6/lib/python3.14/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+2026-09-21T13:23:58.3046221Z     self.wsgi = self.app.wsgi()
+2026-09-21T13:23:58.3046233Z                 ~~~~~~~~~~~~~^^
+2026-09-21T13:23:58.3051584Z   File "/opt/python/3.14.6/lib/python3.14/site-packages/gunicorn/app/base.py", line 66, in wsgi
+2026-09-21T13:23:58.3051634Z     self.callable = self.load()
+2026-09-21T13:23:58.3051647Z                     ~~~~~~~~~^^
+2026-09-21T13:23:58.3052138Z   File "/opt/python/3.14.6/lib/python3.14/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+2026-09-21T13:23:58.3052152Z     return self.load_wsgiapp()
+2026-09-21T13:23:58.3052164Z            ~~~~~~~~~~~~~~~~~^^
+2026-09-21T13:23:58.3052179Z   File "/opt/python/3.14.6/lib/python3.14/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+2026-09-21T13:23:58.3052191Z     return util.import_app(self.app_uri)
+2026-09-21T13:23:58.3052202Z            ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+2026-09-21T13:23:58.3052262Z   File "/opt/python/3.14.6/lib/python3.14/site-packages/gunicorn/util.py", line 366, in import_app
+2026-09-21T13:23:58.3052274Z     mod = importlib.import_module(module)
+2026-09-21T13:23:58.3052288Z   File "/opt/python/3.14.6/lib/python3.14/importlib/__init__.py", line 88, in import_module
+2026-09-21T13:23:58.3052301Z     return _bootstrap._gcd_import(name[level:], package, level)
+2026-09-21T13:23:58.3052315Z            ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-21T13:23:58.3052328Z   File "<frozen importlib._bootstrap>", line 1406, in _gcd_import
+2026-09-21T13:23:58.3052341Z   File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+2026-09-21T13:23:58.3052354Z   File "<frozen importlib._bootstrap>", line 1342, in _find_and_load_unlocked
+2026-09-21T13:23:58.3052367Z   File "<frozen importlib._bootstrap>", line 938, in _load_unlocked
+2026-09-21T13:23:58.305238Z   File "<frozen importlib._bootstrap_external>", line 755, in exec_module
+2026-09-21T13:23:58.3052393Z   File "<frozen importlib._bootstrap_external>", line 893, in get_code
+2026-09-21T13:23:58.3052483Z   File "<frozen importlib._bootstrap_external>", line 823, in source_to_code
+2026-09-21T13:23:58.3052521Z   File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+2026-09-21T13:23:58.3052534Z   File "/tmp/8df17dca7d8aa34/application.py", line 12
+2026-09-21T13:23:58.3052546Z     print(f"x_forwarded_for: {x_forwarded_for})
+2026-09-21T13:23:58.3052556Z           ^
+2026-09-21T13:23:58.3052569Z SyntaxError: unterminated f-string literal (detected at line 12)
+2026-09-21T13:23:58.3136368Z unterminated f-string literal (detected at line 12) (application.py, line 12)
+2026-09-21T13:23:58.3152291Z [2026-09-21 13:23:58 +0000] [1865] [INFO] Worker exiting (pid: 1865)
+2026-09-21T13:23:58.634791Z [2026-09-21 13:23:58 +0000] [1855] [ERROR] Worker (pid:1865) exited with code 3.
+2026-09-21T13:23:58.6425314Z [2026-09-21 13:23:58 +0000] [1855] [ERROR] Shutting down: Master
+2026-09-21T13:23:58.6432838Z [2026-09-21 13:23:58 +0000] [1855] [ERROR] Reason: Worker failed to boot.
+2026-09-21T13:47:25.8825867Z    _____
+2026-09-21T13:47:25.8905423Z   /  _  \ __________ _________   ____
+2026-09-21T13:47:25.8905608Z  /  /_\  \\___   /  |  \_  __ \_/ __ \
+2026-09-21T13:47:25.8905669Z /    |    \/    /|  |  /|  | \/\  ___/
+2026-09-21T13:47:25.8905685Z \____|__  /_____ \____/ |__|    \___  >
+2026-09-21T13:47:25.8905706Z         \/      \/                  \/
+2026-09-21T13:47:25.8905724Z A P P   S E R V I C E   O N   L I N U X
+2026-09-21T13:47:25.8905738Z
+2026-09-21T13:47:25.8905765Z Documentation     : https://aka.ms/webapp-linux
+2026-09-21T13:47:25.8905782Z Python quickstart : https://aka.ms/python-qs
+2026-09-21T13:47:25.8905811Z Python version    : 3.14.6
+2026-09-21T13:47:25.8905827Z Instance name     : lw0sdlwk0007QK
+2026-09-21T13:47:25.890585Z Instance id       : f673f0d9d834b9e1b1a9af3085303f4dbdaafec9f8bbea963b41349b795a6ee6
+2026-09-21T13:47:25.8905863Z
+2026-09-21T13:47:25.8905879Z App port          : 8000
+2026-09-21T13:47:25.8905894Z Port selected by  : Default for this image
+2026-09-21T13:47:25.8905912Z (Learn more about the PORT appsetting https://aka.ms/webapp-python-settings)
+2026-09-21T13:47:25.890594Z
+2026-09-21T13:47:25.8905957Z Note: Any data outside '/home' is not persisted
+2026-09-21T13:47:25.8905971Z
+2026-09-21T13:47:25.8906Z ────────────────────────────────────────────────────────────────
+2026-09-21T13:47:25.8906019Z  Run 'apphelp' for available commands and aliases.
+2026-09-21T13:47:25.8906035Z  Run 'install-nettools' to install networking utilities.
+2026-09-21T13:47:25.8906065Z ────────────────────────────────────────────────────────────────
+2026-09-21T13:47:28.0049695Z  * Starting OpenBSD Secure Shell server sshd
+2026-09-21T13:47:28.0426958Z    ...done.
+2026-09-21T13:47:28.0542894Z WEBSITES_INCLUDE_CLOUD_CERTS is not set to true.
+2026-09-21T13:47:28.1153597Z Updating certificates in /etc/ssl/certs...
+2026-09-21T13:47:38.4639241Z rehash: warning: skipping duplicate certificate in SSLcom-TLS-Root-2022-ECC.pem
+2026-09-21T13:47:38.4644382Z rehash: warning: skipping duplicate certificate in SSLcom-TLS-Root-2022-RSA.pem
+2026-09-21T13:47:38.8053804Z rehash: warning: skipping ca-certificates.crt,it does not contain exactly one certificate or CRL
+2026-09-21T13:47:38.8359547Z 4 added, 0 removed; done.
+2026-09-21T13:47:38.8430174Z Running hooks in /etc/ca-certificates/update.d...
+2026-09-21T13:47:38.8453082Z done.
+2026-09-21T13:47:38.8727231Z CA certificates copied and updated successfully.
+2026-09-21T13:47:38.9244726Z App Command Line not configured, will attempt auto-detect
+2026-09-21T13:47:39.0134393Z  * Starting periodic command scheduler cron
+2026-09-21T13:47:39.0243126Z    ...done.
+2026-09-21T13:47:39.0249842Z Launching oryx with: create-script -appPath /home/site/wwwroot -output /opt/startup/startup.sh -virtualEnvName antenv -defaultApp /opt/defaultsite
+2026-09-21T13:47:39.1541836Z Found build manifest file at '/home/site/wwwroot/oryx-manifest.toml'. Deserializing it...
+2026-09-21T13:47:39.165118Z Build Operation ID: 368585ea92583c13
+2026-09-21T13:47:39.1822562Z Oryx Version: 0.2.20260710.1, Commit: 079b5b6294eb97d462d8f96bfa3243e9b85251da, ReleaseTagName: 20260710.1
+2026-09-21T13:47:39.1822941Z Output is compressed. Extracting it...
+2026-09-21T13:47:39.1822969Z Found zstd-compressed tarball.
+2026-09-21T13:47:39.1822997Z Extracting '/home/site/wwwroot/output.tar.zst' to directory '/tmp/8df17dca7d8aa34'...
+2026-09-21T13:47:39.182304Z Using zstd for decompression of file: /home/site/wwwroot/output.tar.zst
+2026-09-21T13:47:41.032359Z zstd tar Successfully extracted '/home/site/wwwroot/output.tar.zst' to '/tmp/8df17dca7d8aa34'
+2026-09-21T13:47:41.0328947Z App path is set to '/tmp/8df17dca7d8aa34'
+2026-09-21T13:47:41.6729599Z Detected an app based on Flask
+2026-09-21T13:47:41.7124732Z Generating `gunicorn` command for 'application:app'
+2026-09-21T13:47:41.7503936Z Writing output script to '/opt/startup/startup.sh'
+2026-09-21T13:47:41.9842654Z Using packages from virtual environment antenv located at /tmp/8df17dca7d8aa34/antenv.
+2026-09-21T13:47:41.9930849Z Updated PYTHONPATH to '/opt/startup/app_logs:/tmp/8df17dca7d8aa34/antenv/lib/python3.14/site-packages'
+2026-09-21T13:47:43.2123634Z [2026-09-21 13:47:43 +0000] [1855] [INFO] Starting gunicorn 24.1.1
+2026-09-21T13:47:43.2730067Z [2026-09-21 13:47:43 +0000] [1855] [INFO] Listening at: http://0.0.0.0:8000 (1855)
+2026-09-21T13:47:43.2735643Z [2026-09-21 13:47:43 +0000] [1855] [INFO] Using worker: sync
+2026-09-21T13:47:43.2852093Z [2026-09-21 13:47:43 +0000] [1865] [INFO] Booting worker with pid: 1865
+2026-09-21T13:47:43.3140957Z [2026-09-21 13:47:43 +0000] [1865] [ERROR] Exception in worker process
+2026-09-21T13:47:43.3141223Z Traceback (most recent call last):
+2026-09-21T13:47:43.3141248Z   File "/opt/python/3.14.6/lib/python3.14/site-packages/gunicorn/arbiter.py", line 641, in spawn_worker
+2026-09-21T13:47:43.3141265Z     worker.init_process()
+2026-09-21T13:47:43.314133Z     ~~~~~~~~~~~~~~~~~~~^^
+2026-09-21T13:47:43.3141348Z   File "/opt/python/3.14.6/lib/python3.14/site-packages/gunicorn/workers/base.py", line 135, in init_process
+2026-09-21T13:47:43.3141364Z     self.load_wsgi()
+2026-09-21T13:47:43.3141378Z     ~~~~~~~~~~~~~~^^
+2026-09-21T13:47:43.3141395Z   File "/opt/python/3.14.6/lib/python3.14/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+2026-09-21T13:47:43.314141Z     self.wsgi = self.app.wsgi()
+2026-09-21T13:47:43.3141424Z                 ~~~~~~~~~~~~~^^
+2026-09-21T13:47:43.3141519Z   File "/opt/python/3.14.6/lib/python3.14/site-packages/gunicorn/app/base.py", line 66, in wsgi
+2026-09-21T13:47:43.3141535Z     self.callable = self.load()
+2026-09-21T13:47:43.3141548Z                     ~~~~~~~~~^^
+2026-09-21T13:47:43.3141565Z   File "/opt/python/3.14.6/lib/python3.14/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+2026-09-21T13:47:43.314158Z     return self.load_wsgiapp()
+2026-09-21T13:47:43.3141595Z            ~~~~~~~~~~~~~~~~~^^
+2026-09-21T13:47:43.3141612Z   File "/opt/python/3.14.6/lib/python3.14/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+2026-09-21T13:47:43.3141644Z     return util.import_app(self.app_uri)
+2026-09-21T13:47:43.314166Z            ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+2026-09-21T13:47:43.3141677Z   File "/opt/python/3.14.6/lib/python3.14/site-packages/gunicorn/util.py", line 366, in import_app
+2026-09-21T13:47:43.3141693Z     mod = importlib.import_module(module)
+2026-09-21T13:47:43.3141711Z   File "/opt/python/3.14.6/lib/python3.14/importlib/__init__.py", line 88, in import_module
+2026-09-21T13:47:43.3141729Z     return _bootstrap._gcd_import(name[level:], package, level)
+2026-09-21T13:47:43.3141744Z            ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-21T13:47:43.3141775Z   File "<frozen importlib._bootstrap>", line 1406, in _gcd_import
+2026-09-21T13:47:43.3141792Z   File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+2026-09-21T13:47:43.3141809Z   File "<frozen importlib._bootstrap>", line 1342, in _find_and_load_unlocked
+2026-09-21T13:47:43.3141825Z   File "<frozen importlib._bootstrap>", line 938, in _load_unlocked
+2026-09-21T13:47:43.3141842Z   File "<frozen importlib._bootstrap_external>", line 755, in exec_module
+2026-09-21T13:47:43.3141858Z   File "<frozen importlib._bootstrap_external>", line 893, in get_code
+2026-09-21T13:47:43.3141874Z   File "<frozen importlib._bootstrap_external>", line 823, in source_to_code
+2026-09-21T13:47:43.3141922Z   File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+2026-09-21T13:47:43.3141948Z   File "/tmp/8df17dca7d8aa34/application.py", line 12
+2026-09-21T13:47:43.3141965Z     print(f"x_forwarded_for: {x_forwarded_for})
+2026-09-21T13:47:43.3141978Z           ^
+2026-09-21T13:47:43.3141994Z SyntaxError: unterminated f-string literal (detected at line 12)
+2026-09-21T13:47:43.333802Z unterminated f-string literal (detected at line 12) (application.py, line 12)
+2026-09-21T13:47:43.3340586Z [2026-09-21 13:47:43 +0000] [1865] [INFO] Worker exiting (pid: 1865)
+2026-09-21T13:47:43.6349534Z [2026-09-21 13:47:43 +0000] [1855] [ERROR] Worker (pid:1865) exited with code 3.
+2026-09-21T13:47:43.6434422Z [2026-09-21 13:47:43 +0000] [1855] [ERROR] Shutting down: Master
+2026-09-21T13:47:43.6434585Z [2026-09-21 13:47:43 +0000] [1855] [ERROR] Reason: Worker failed to boot.
+2026-09-21T13:47:47.4473132Z    _____
+2026-09-21T13:47:47.4473333Z   /  _  \ __________ _________   ____
+2026-09-21T13:47:47.4473386Z  /  /_\  \\___   /  |  \_  __ \_/ __ \
+2026-09-21T13:47:47.4473399Z /    |    \/    /|  |  /|  | \/\  ___/
+2026-09-21T13:47:47.447341Z \____|__  /_____ \____/ |__|    \___  >
+2026-09-21T13:47:47.4473421Z         \/      \/                  \/
+2026-09-21T13:47:47.4473432Z A P P   S E R V I C E   O N   L I N U X
+2026-09-21T13:47:47.4473442Z
+2026-09-21T13:47:47.4473456Z Documentation     : https://aka.ms/webapp-linux
+2026-09-21T13:47:47.4473468Z Python quickstart : https://aka.ms/python-qs
+2026-09-21T13:47:47.4473481Z Python version    : 3.14.6
+2026-09-21T13:47:47.4473493Z Instance name     : lw0sdlwk0007QK
+2026-09-21T13:47:47.4473508Z Instance id       : f673f0d9d834b9e1b1a9af3085303f4dbdaafec9f8bbea963b41349b795a6ee6
+2026-09-21T13:47:47.4473518Z
+2026-09-21T13:47:47.447353Z App port          : 8000
+2026-09-21T13:47:47.4473554Z Port selected by  : Default for this image
+2026-09-21T13:47:47.4473569Z (Learn more about the PORT appsetting https://aka.ms/webapp-python-settings)
+2026-09-21T13:47:47.4473579Z
+2026-09-21T13:47:47.4473591Z Note: Any data outside '/home' is not persisted
+2026-09-21T13:47:47.44736Z
+2026-09-21T13:47:47.4473628Z ────────────────────────────────────────────────────────────────
+2026-09-21T13:47:47.447364Z  Run 'apphelp' for available commands and aliases.
+2026-09-21T13:47:47.4473653Z  Run 'install-nettools' to install networking utilities.
+2026-09-21T13:47:47.4473672Z ────────────────────────────────────────────────────────────────
+2026-09-21T13:47:50.2776102Z  * Starting OpenBSD Secure Shell server sshd
+2026-09-21T13:47:50.3361638Z    ...done.
+2026-09-21T13:47:50.3465918Z WEBSITES_INCLUDE_CLOUD_CERTS is not set to true.
+2026-09-21T13:47:50.3861694Z Updating certificates in /etc/ssl/certs...
+2026-09-21T13:48:00.2897525Z rehash: warning: skipping duplicate certificate in SSLcom-TLS-Root-2022-ECC.pem
+2026-09-21T13:48:00.2988436Z rehash: warning: skipping duplicate certificate in SSLcom-TLS-Root-2022-RSA.pem
+2026-09-21T13:48:00.5681446Z rehash: warning: skipping ca-certificates.crt,it does not contain exactly one certificate or CRL
+2026-09-21T13:48:00.5987943Z 4 added, 0 removed; done.
+2026-09-21T13:48:00.5994513Z Running hooks in /etc/ca-certificates/update.d...
+2026-09-21T13:48:00.6081686Z done.
+2026-09-21T13:48:00.6287699Z CA certificates copied and updated successfully.
+2026-09-21T13:48:00.6974183Z App Command Line not configured, will attempt auto-detect
+2026-09-21T13:48:00.7899694Z  * Starting periodic command scheduler cron
+2026-09-21T13:48:00.8098557Z    ...done.
+2026-09-21T13:48:00.8280791Z Launching oryx with: create-script -appPath /home/site/wwwroot -output /opt/startup/startup.sh -virtualEnvName antenv -defaultApp /opt/defaultsite
+2026-09-21T13:48:00.8973013Z Found build manifest file at '/home/site/wwwroot/oryx-manifest.toml'. Deserializing it...
+2026-09-21T13:48:00.9080105Z Build Operation ID: 368585ea92583c13
+2026-09-21T13:48:00.9173498Z Oryx Version: 0.2.20260710.1, Commit: 079b5b6294eb97d462d8f96bfa3243e9b85251da, ReleaseTagName: 20260710.1
+2026-09-21T13:48:00.9177921Z Output is compressed. Extracting it...
+2026-09-21T13:48:00.9270254Z Found zstd-compressed tarball.
+2026-09-21T13:48:00.9278007Z Extracting '/home/site/wwwroot/output.tar.zst' to directory '/tmp/8df17dca7d8aa34'...
+2026-09-21T13:48:00.9282281Z Using zstd for decompression of file: /home/site/wwwroot/output.tar.zst
+2026-09-21T13:48:04.3190371Z zstd tar Successfully extracted '/home/site/wwwroot/output.tar.zst' to '/tmp/8df17dca7d8aa34'
+2026-09-21T13:48:04.3190604Z App path is set to '/tmp/8df17dca7d8aa34'
+2026-09-21T13:48:04.6282909Z Detected an app based on Flask
+2026-09-21T13:48:04.6682244Z Generating `gunicorn` command for 'application:app'
+2026-09-21T13:48:04.7092131Z Writing output script to '/opt/startup/startup.sh'
+2026-09-21T13:48:04.8908058Z Using packages from virtual environment antenv located at /tmp/8df17dca7d8aa34/antenv.
+2026-09-21T13:48:04.8984849Z Updated PYTHONPATH to '/opt/startup/app_logs:/tmp/8df17dca7d8aa34/antenv/lib/python3.14/site-packages'
+2026-09-21T13:48:05.7990238Z [2026-09-21 13:48:05 +0000] [1856] [INFO] Starting gunicorn 24.1.1
+2026-09-21T13:48:05.8783793Z [2026-09-21 13:48:05 +0000] [1856] [INFO] Listening at: http://0.0.0.0:8000 (1856)
+2026-09-21T13:48:05.8786998Z [2026-09-21 13:48:05 +0000] [1856] [INFO] Using worker: sync
+2026-09-21T13:48:05.8879138Z [2026-09-21 13:48:05 +0000] [1865] [INFO] Booting worker with pid: 1865
+2026-09-21T13:48:05.9407684Z [2026-09-21 13:48:05 +0000] [1865] [ERROR] Exception in worker process
+2026-09-21T13:48:05.9407906Z Traceback (most recent call last):
+2026-09-21T13:48:05.9407924Z   File "/opt/python/3.14.6/lib/python3.14/site-packages/gunicorn/arbiter.py", line 641, in spawn_worker
+2026-09-21T13:48:05.9407936Z     worker.init_process()
+2026-09-21T13:48:05.9407948Z     ~~~~~~~~~~~~~~~~~~~^^
+2026-09-21T13:48:05.9407965Z   File "/opt/python/3.14.6/lib/python3.14/site-packages/gunicorn/workers/base.py", line 135, in init_process
+2026-09-21T13:48:05.9407976Z     self.load_wsgi()
+2026-09-21T13:48:05.9407987Z     ~~~~~~~~~~~~~~^^
+2026-09-21T13:48:05.9408001Z   File "/opt/python/3.14.6/lib/python3.14/site-packages/gunicorn/workers/base.py", line 147, in load_wsgi
+2026-09-21T13:48:05.9408013Z     self.wsgi = self.app.wsgi()
+2026-09-21T13:48:05.9408025Z                 ~~~~~~~~~~~~~^^
+2026-09-21T13:48:05.9408039Z   File "/opt/python/3.14.6/lib/python3.14/site-packages/gunicorn/app/base.py", line 66, in wsgi
+2026-09-21T13:48:05.940805Z     self.callable = self.load()
+2026-09-21T13:48:05.9408077Z                     ~~~~~~~~~^^
+2026-09-21T13:48:05.9408093Z   File "/opt/python/3.14.6/lib/python3.14/site-packages/gunicorn/app/wsgiapp.py", line 57, in load
+2026-09-21T13:48:05.9408104Z     return self.load_wsgiapp()
+2026-09-21T13:48:05.9408115Z            ~~~~~~~~~~~~~~~~~^^
+2026-09-21T13:48:05.9408129Z   File "/opt/python/3.14.6/lib/python3.14/site-packages/gunicorn/app/wsgiapp.py", line 47, in load_wsgiapp
+2026-09-21T13:48:05.9408141Z     return util.import_app(self.app_uri)
+2026-09-21T13:48:05.9408153Z            ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^
+2026-09-21T13:48:05.9408168Z   File "/opt/python/3.14.6/lib/python3.14/site-packages/gunicorn/util.py", line 366, in import_app
+2026-09-21T13:48:05.940818Z     mod = importlib.import_module(module)
+2026-09-21T13:48:05.9408194Z   File "/opt/python/3.14.6/lib/python3.14/importlib/__init__.py", line 88, in import_module
+2026-09-21T13:48:05.940825Z     return _bootstrap._gcd_import(name[level:], package, level)
+2026-09-21T13:48:05.9408263Z            ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-21T13:48:05.9408276Z   File "<frozen importlib._bootstrap>", line 1406, in _gcd_import
+2026-09-21T13:48:05.9408309Z   File "<frozen importlib._bootstrap>", line 1371, in _find_and_load
+2026-09-21T13:48:05.9408323Z   File "<frozen importlib._bootstrap>", line 1342, in _find_and_load_unlocked
+2026-09-21T13:48:05.9408336Z   File "<frozen importlib._bootstrap>", line 938, in _load_unlocked
+2026-09-21T13:48:05.940835Z   File "<frozen importlib._bootstrap_external>", line 755, in exec_module
+2026-09-21T13:48:05.9408364Z   File "<frozen importlib._bootstrap_external>", line 893, in get_code
+2026-09-21T13:48:05.9408378Z   File "<frozen importlib._bootstrap_external>", line 823, in source_to_code
+2026-09-21T13:48:05.9408392Z   File "<frozen importlib._bootstrap>", line 491, in _call_with_frames_removed
+2026-09-21T13:48:05.9408405Z   File "/tmp/8df17dca7d8aa34/application.py", line 12
+2026-09-21T13:48:05.9408418Z     print(f"x_forwarded_for: {x_forwarded_for})
+2026-09-21T13:48:05.9408428Z           ^
+2026-09-21T13:48:05.9408442Z SyntaxError: unterminated f-string literal (detected at line 12)
+2026-09-21T13:48:05.9582242Z unterminated f-string literal (detected at line 12) (application.py, line 12)
+2026-09-21T13:48:05.9602577Z [2026-09-21 13:48:05 +0000] [1865] [INFO] Worker exiting (pid: 1865)
+2026-09-21T13:48:06.3689692Z [2026-09-21 13:48:06 +0000] [1856] [ERROR] Worker (pid:1865) exited with code 3.
+2026-09-21T13:48:06.3699005Z [2026-09-21 13:48:06 +0000] [1856] [ERROR] Shutting down: Master
+2026-09-21T13:48:06.3703484Z [2026-09-21 13:48:06 +0000] [1856] [ERROR] Reason: Worker failed to boot.
+2026-09-21T13:52:41.650Z No new trace in the past 1 min(s).
+2026-09-21T13:53:41.650Z No new trace in the past 2 min(s).
+2026-09-21T13:54:41.650Z No new trace in the past 3 min(s).
+2026-09-21T13:55:41.650Z No new trace in the past 4 min(s).
+2026-09-21T13:56:41.650Z No new trace in the past 5 min(s).
+2026-09-21T13:57:41.650Z No new trace in the past 6 min(s).
+2026-09-21T13:58:41.650Z No new trace in the past 7 min(s).
+2026-09-21T13:59:41.650Z No new trace in the past 8 min(s).
+2026-09-21T14:00:41.650Z No new trace in the past 9 min(s).
+2026-09-21T14:01:41.650Z No new trace in the past 10 min(s).
+2026-09-21T14:02:41.650Z No new trace in the past 11 min(s).
+2026-09-21T14:03:41.650Z No new trace in the past 12 min(s).
+2026-09-21T14:04:41.650Z No new trace in the past 13 min(s).
+2026-09-21T14:05:41.650Z No new trace in the past 14 min(s).
+2026-09-21T14:06:41.650Z No new trace in the past 15 min(s).
+2026-09-21T14:07:41.650Z No new trace in the past 16 min(s).
+2026-09-21T14:08:41.650Z No new trace in the past 17 min(s).
+2026-09-21T14:09:41.650Z No new trace in the past 18 min(s).
+2026-09-21T14:10:41.650Z No new trace in the past 19 min(s).
+2026-09-21T14:11:22.6956679Z    _____
+2026-09-21T14:11:22.6956922Z   /  _  \ __________ _________   ____
+2026-09-21T14:11:22.6956943Z  /  /_\  \\___   /  |  \_  __ \_/ __ \
+2026-09-21T14:11:22.6956954Z /    |    \/    /|  |  /|  | \/\  ___/
+2026-09-21T14:11:22.6956965Z \____|__  /_____ \____/ |__|    \___  >
+2026-09-21T14:11:22.6956977Z         \/      \/                  \/
+2026-09-21T14:11:22.6956988Z A P P   S E R V I C E   O N   L I N U X
+2026-09-21T14:11:22.6956999Z
+2026-09-21T14:11:22.6957013Z Documentation     : https://aka.ms/webapp-linux
+2026-09-21T14:11:22.6957025Z Python quickstart : https://aka.ms/python-qs
+2026-09-21T14:11:22.6957037Z Python version    : 3.14.6
+2026-09-21T14:11:22.6957049Z Instance name     : lw0sdlwk0007QK
+2026-09-21T14:11:22.6957064Z Instance id       : f673f0d9d834b9e1b1a9af3085303f4dbdaafec9f8bbea963b41349b795a6ee6
+2026-09-21T14:11:22.6957074Z
+2026-09-21T14:11:22.6957201Z App port          : 8000
+2026-09-21T14:11:22.695729Z Port selected by  : Default for this image
+2026-09-21T14:11:22.6957305Z (Learn more about the PORT appsetting https://aka.ms/webapp-python-settings)
+2026-09-21T14:11:22.6957315Z
+2026-09-21T14:11:22.6957327Z Note: Any data outside '/home' is not persisted
+2026-09-21T14:11:22.6957336Z
+2026-09-21T14:11:22.6957361Z ────────────────────────────────────────────────────────────────
+2026-09-21T14:11:22.6957375Z  Run 'apphelp' for available commands and aliases.
+2026-09-21T14:11:22.6957388Z  Run 'install-nettools' to install networking utilities.
+2026-09-21T14:11:22.6957409Z ────────────────────────────────────────────────────────────────
+2026-09-21T14:11:26.9880999Z  * Starting OpenBSD Secure Shell server sshd
+2026-09-21T14:11:27.0259061Z    ...done.
+2026-09-21T14:11:27.0376457Z WEBSITES_INCLUDE_CLOUD_CERTS is not set to true.
+2026-09-21T14:11:27.1062781Z Updating certificates in /etc/ssl/certs...
+2026-09-21T14:11:37.1715524Z rehash: warning: skipping duplicate certificate in SSLcom-TLS-Root-2022-ECC.pem
+2026-09-21T14:11:37.1719941Z rehash: warning: skipping duplicate certificate in SSLcom-TLS-Root-2022-RSA.pem
+2026-09-21T14:11:37.4403379Z rehash: warning: skipping ca-certificates.crt,it does not contain exactly one certificate or CRL
+2026-09-21T14:11:37.5162307Z 4 added, 0 removed; done.
+2026-09-21T14:11:37.5162596Z Running hooks in /etc/ca-certificates/update.d...
+2026-09-21T14:11:37.5203652Z done.
+2026-09-21T14:11:37.5502006Z CA certificates copied and updated successfully.
+2026-09-21T14:11:37.6399848Z App Command Line not configured, will attempt auto-detect
+2026-09-21T14:11:37.8607319Z  * Starting periodic command scheduler cron
+2026-09-21T14:11:37.8804382Z    ...done.
+2026-09-21T14:11:37.8821306Z Launching oryx with: create-script -appPath /home/site/wwwroot -output /opt/startup/startup.sh -virtualEnvName antenv -defaultApp /opt/defaultsite
+2026-09-21T14:11:38.2489158Z Found build manifest file at '/home/site/wwwroot/oryx-manifest.toml'. Deserializing it...
+2026-09-21T14:11:38.2595432Z Build Operation ID: e2daa1b514b303b7
+2026-09-21T14:11:38.2696605Z Oryx Version: 0.2.20260710.1, Commit: 079b5b6294eb97d462d8f96bfa3243e9b85251da, ReleaseTagName: 20260710.1
+2026-09-21T14:11:38.2707674Z Output is compressed. Extracting it...
+2026-09-21T14:11:38.278745Z Found zstd-compressed tarball.
+2026-09-21T14:11:38.2795249Z Extracting '/home/site/wwwroot/output.tar.zst' to directory '/tmp/8df17e9e332fdd4'...
+2026-09-21T14:11:38.2800774Z Using zstd for decompression of file: /home/site/wwwroot/output.tar.zst
+2026-09-21T14:11:40.1905578Z zstd tar Successfully extracted '/home/site/wwwroot/output.tar.zst' to '/tmp/8df17e9e332fdd4'
+2026-09-21T14:11:40.190858Z App path is set to '/tmp/8df17e9e332fdd4'
+2026-09-21T14:11:40.629859Z Detected an app based on Flask
+2026-09-21T14:11:40.6794581Z Generating `gunicorn` command for 'application:app'
+2026-09-21T14:11:40.7188427Z Writing output script to '/opt/startup/startup.sh'
+2026-09-21T14:11:41.0102575Z Using packages from virtual environment antenv located at /tmp/8df17e9e332fdd4/antenv.
+2026-09-21T14:11:41.0181588Z Updated PYTHONPATH to '/opt/startup/app_logs:/tmp/8df17e9e332fdd4/antenv/lib/python3.14/site-packages'
+2026-09-21T14:11:42.1985237Z [2026-09-21 14:11:42 +0000] [1855] [INFO] Starting gunicorn 24.1.1
+2026-09-21T14:11:42.2708928Z [2026-09-21 14:11:42 +0000] [1855] [INFO] Listening at: http://0.0.0.0:8000 (1855)
+2026-09-21T14:11:42.2783372Z [2026-09-21 14:11:42 +0000] [1855] [INFO] Using worker: sync
+2026-09-21T14:11:42.2981936Z [2026-09-21 14:11:42 +0000] [1865] [INFO] Booting worker with pid: 1865
+2026-09-21T14:11:43.5910101Z 169.254.130.1 - - [21/Sep/2026:14:11:43 +0000] "GET /robots933456.txt HTTP/1.1" 404 207 "-" "HealthCheck/1.0"
+2026-09-21T14:11:44.5618812Z VISITA REGISTRADA: {'PartitionKey': '2026-09', 'RowKey': '1789999904', 'ClientIP': '45.186.209.184:29356', 'Timestamp': '2026-09-21T14:11:44.552060', 'UserAgent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36 Edg/153.0.0.0'}
+2026-09-21T14:11:44.5618966Z 169.254.130.1 - - [21/Sep/2026:14:11:44 +0000] "GET / HTTP/1.1" 200 347 "https://sandbox-4.reactblade.portal.azure.net/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36 Edg/153.0.0.0"
+2026-09-21T14:11:44.7819957Z 169.254.130.1 - - [21/Sep/2026:14:11:44 +0000] "GET /favicon.ico HTTP/1.1" 404 207 "https://webapp3mediatech-ekhtc5gsawaueaa4.westus3-01.azurewebsites.net/" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36 Edg/153.0.0.0"
