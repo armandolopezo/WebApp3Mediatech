@@ -9,7 +9,7 @@ def get_client_ip(req):
     
     if x_forwarded_for:
         # I will print variable  "x_forwarded_for"temporary for curiosity
-        # print(f"x_forwarded_for: {x_forwarded_for})
+        print(f"x_forwarded_for: {x_forwarded_for}")
         # La primera IP es la del cliente original
         client_ip = x_forwarded_for.split(',')[0].strip()
     else:
